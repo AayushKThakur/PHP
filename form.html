@@ -1,0 +1,27 @@
+<!-- Explanation:
+
+action="form_handler.php": Sends the form data to form_handler.php.
+method="POST": Uses the POST method, making the data secure (not visible in the URL).
+<input> fields: Accept user input for "name" and "email".
+<input type="submit">: Button to submit the form data. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple PHP Form</title>
+</head>
+<body>
+    <h2>User Information Form</h2>
+    <!-- Form sends data to form_handler.php using POST -->
+    <form action="form_handler.php" method="POST">
+        <!-- Input for Name -->
+        Name: <input type="text" name="name"><br><br>
+
+        <!-- Input for Email -->
+        Email: <input type="text" name="email"><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
